@@ -43,12 +43,12 @@ def get_image_from_url(url):
     return img, rgb_img_float, input_tensor
 
 # %% 作为比对的原型
-car_img, car_img_float, car_tensor = get_image_from_url("my_test/cam2.png")
+car_img, car_img_float, car_tensor = get_image_from_url("my_test/nonvehile2_1.jpg")
 car_concept_features = model(car_tensor)[0, :]
 
 
 # %% 作为比对的目标,用来画图
-image, image_float, input_tensor = get_image_from_url("my_test/cam1.png")
+image, image_float, input_tensor = get_image_from_url("my_test/nonvehile1_1.jpg")
 Image.fromarray(image)
 
 
