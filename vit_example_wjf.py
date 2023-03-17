@@ -96,7 +96,7 @@ if __name__ == '__main__':
 
     # device = 'cpu'
     # resnet34, vit_small_patch16_224, swin_small_patch4_window7_224
-    model = timm.create_model('vit_tiny_patch16_224',pretrained=True).to("cpu")
+    model = timm.create_model('vit_small_patch16_224',pretrained=True).to("cpu")
 # ┌────────────────────────────────────────────────────────────────────────┐
 # │                           自定义模型 vit  end        
 # └────────────────────────────────────────────────────────────────────────┘
